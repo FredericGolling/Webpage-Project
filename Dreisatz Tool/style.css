@@ -1,0 +1,45 @@
+body {
+    background-color: lightseagreen;
+}
+
+.btn-danger {
+    color: whitesmoke;
+    background-color: crimson;
+    border-color: whitesmoke;
+}
+.btn {
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+.btn-success {
+    color: whitesmoke;
+    background-color: forestgreen;
+    border-color: whitesmoke;
+}
+  
+.wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid darkolivegreen;
+    padding: 20px;
+    display: flex;
+}
+
+
+.card {
+    border: 2px solid cadetblue;
+    padding: 20px;
+    margin: 10px;
+    flex-grow: 1;
+    border-radius: 10px;
+    flex-basis: 0;
+}
+
+.background-image {
+    height: 150px;
+    background-size: cover;
+    background-position: 50%  50%;
+}

@@ -1,11 +1,11 @@
 body {
-    background-color: lightseagreen;
+    background-color: rgb(98, 58, 161);
 }
 
 .btn-danger {
     color: whitesmoke;
     background-color: crimson;
-    border-color: whitesmoke;
+    border-color: darkred;
 }
 .btn {
     margin-top: 40px;
@@ -15,7 +15,12 @@ body {
 .btn-success {
     color: whitesmoke;
     background-color: forestgreen;
-    border-color: whitesmoke;
+    border-color: darkgreen;
+}
+
+.mid-title {
+    display: flex;
+    flex-grow: 8;                   /* How do I make the title so it is centered above the three objects?? */
 }
   
 .wrapper {
@@ -23,7 +28,8 @@ body {
     max-width: 1024px;
     margin: auto;
     margin-top: 40px;
-    border: 2px solid darkolivegreen;
+    margin-bottom: 40px;
+    border: 4px solid blue;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -39,6 +45,7 @@ body {
     flex-basis: 0;
     border: 0px;
     position: relative;
+    justify-content: space-around;
 }
 
 .titlebox .point {
@@ -52,7 +59,8 @@ body {
 }
 
 .background-image {
-    height: 150px;
+    height: 380px;
+    width: 250px;
     background-size: cover;
     background-position: 50%  50%;
     border-radius: 10px;
@@ -60,6 +68,31 @@ body {
     border-bottom-right-radius: 0px;
     background-repeat: no-repeat;
 }
+
+/* The navbar container */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+  
+  /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+}
+
 
 @media screen and (min-width: 600px) {
     .wrapper {
@@ -70,3 +103,4 @@ body {
     .card {
         flex-basis: 250px;
     }
+}

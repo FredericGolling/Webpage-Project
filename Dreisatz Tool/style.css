@@ -26,20 +26,47 @@ body {
     border: 2px solid darkolivegreen;
     padding: 20px;
     display: flex;
+    flex-direction: column;
 }
 
 
-.card {
-    border: 2px solid cadetblue;
-    padding: 20px;
+.titlebox {
+    /* border: 2px solid cadetblue; */
+    /* padding: 20px; */
     margin: 10px;
     flex-grow: 1;
     border-radius: 10px;
     flex-basis: 0;
+    border: 0px;
+    position: relative;
+}
+
+.titlebox .point {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: red;
+    top: 90px;
+    left: 20px;
 }
 
 .background-image {
     height: 150px;
     background-size: cover;
     background-position: 50%  50%;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-repeat: no-repeat;
 }
+
+@media screen and (min-width: 600px) {
+    .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex-basis: 250px;
+    }

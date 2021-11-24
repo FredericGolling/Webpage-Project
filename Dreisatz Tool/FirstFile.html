@@ -13,37 +13,37 @@
         <div class="container">
             <h1 style="color: white;">Dreisatz-Tool</h1>
             
-            <form action="" method="get" class="form-example">
+            <form class="form-example">
                 <div class="row">
                     <div class="col-sm-12 col-md-8 col-lg-6">
                         <div class="form-example">
-                            <label for="Zahl1" style="color: white; font-size: x-large;">Zahl 1: </label>
-                            <input type="number" class="form-control" name="Zahl1" required>
+                            <label for="zahl1" style="color: white; font-size: x-large;">Zahl 1: </label>
+                            <input id="zahl1" type="number" class="form-control" name="zahl1">
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-8 col-lg-6">
                         <div class="form-example">
-                            <label for="Zahl2" style="color: white; font-size: x-large;">Zahl 2: </label>
-                            <input type="number" class="form-control" name="Zahl2" required>
+                            <label for="zahl2" style="color: white; font-size: x-large;">Zahl 2: </label>
+                            <input id="zahl2" type="number" class="form-control" name="zahl2">
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-8 col-lg-6">
                         <div class="form-example">
-                            <label for="Zahl3" style="color: white; font-size: x-large;">Zahl 3: </label>
-                            <input type="number" class="form-control" name="Zahl3" required>
+                            <label for="zahl3" style="color: white; font-size: x-large;">Zahl 3: </label>
+                            <input id="zahl3" type="number" class="form-control" name="zahl3">
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-8 col-lg-6">
                         <div class="form-example">
                             <div class="form-example">
-                                <label for="Zahl4" style="color: white; font-size: x-large;">Zahl 4: </label>
-                                <input type="number" readonly class="form-control" name="Zahl4" placeholder="Endresultat erscheint hier...">
+                                <label for="zahl4" style="color: white; font-size: x-large;">Zahl 4: </label>
+                                <input id="zahl4" type="number" readonly class="form-control" name="zahl4" placeholder="Endresultat erscheint hier...">
                             </div>
                         </div>
                     </div>
                     <div class="row-sm">
                         <input type="reset" class="btn btn-danger" value="Zurücksetzen">    
-                        <input type="submit" class="btn btn-success" style="text-align: right;" value="Go">
+                        <input id="calculate" type="submit" class="btn btn-success" style="text-align: right;" value="Go">
                     </div>
                 
                 </div>
@@ -56,9 +56,7 @@
 
         </div>
         <div class="wrapper">
-            <div class="mid-title">
-                <h2>Wonderful architecture:</h2>
-            </div>
+            
             <div class="titlebox">
                 <div class="background-image" style="background-image: url(https://images.unsplash.com/photo-1637330799332-673ef1648d41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);"></div>
                 <h2 align="center" style="color: whitesmoke; font-size: medium;">The <a href="https://en.wikipedia.org/wiki/Eiffel_Tower">Eiffel Tower</a> by night,<br> drone shot by <a href="https://unsplash.com/@jankie_sz">Jan Szwagrzyk</a></h2>
@@ -80,6 +78,10 @@
             </div>
         </div>    
     </div>
+
+    <script src="script.js">
+        
+    </script>
     </body>
 
 

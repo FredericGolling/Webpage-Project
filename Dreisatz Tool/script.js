@@ -9,8 +9,14 @@ function calculate(event) {
 
     console.log('calculate');
     const zahl1 = inputzahl1.value;
-    console.log(zahl1);
+    const zahl2 = inputzahl2.value;
+    const zahl3 = inputzahl3.value;
+    console.log(zahl1 + "; " + zahl2 + "; " + zahl3);
 
+    if (zahl1 == "" || zahl2 == "" || zahl3 == "") {
+        inputzahl4.value = "";
+        return
+    }
     const resultat = zahl3 * zahl2 / zahl1
     inputzahl4.value = resultat;
 
@@ -19,5 +25,8 @@ function calculate(event) {
 
 
 
-buttoncalculate.addEventListener('click', calculate)
 
+buttoncalculate.addEventListener('click', calculate)
+inputzahl1.addEventListener('keyup', calculate)
+inputzahl2.addEventListener('keyup', calculate)
+inputzahl3.addEventListener('keyup', calculate)
